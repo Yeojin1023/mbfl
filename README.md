@@ -66,7 +66,7 @@
         <nav>
             <ul> 
                 <li><a href="#Aboutus">About Us</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#experience">Blog</a></li>
                 <li><a href="#contact" class="contact">Contact Us</a></li>
             </ul>
         </nav> <br>
