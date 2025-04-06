@@ -66,7 +66,7 @@
         <nav>
             <ul> 
                 <li><a href="#Aboutus">About Us</a></li>
-                <li><a href="#experience">Blog</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact" class="contact">Contact Us</a></li>
             </ul>
         </nav> <br>
@@ -103,7 +103,7 @@
 
 
     <section class="video-container">
-        <h2 id="experience">My Favorite Video</h2>
+        <h2 id="blog">My Favorite Video</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/f8CuMi0csnE?si=cEQAMIiGE8YXaFQS" title="YouTube video 	player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-	share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
