@@ -1,88 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        header, section, footer {
-            margin-bottom: 20px;
-            padding: 15px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
-	nav ul {
-   	 list-style: none;
-   	 padding: 0;
-	}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feona & Beveymae's Portfolio - Blog</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-	nav ul li {
-   	 display: inline;
-    	margin: 0 15px;
-	}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      padding: 0 20px;
+    }
 
-	nav ul li a {
-    	color: #fff;
-   	 text-decoration: none;
-    	font-size: 1.2rem;
-	}
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        iframe {
-            display: block;
-            margin: 10px auto;
-            border: 2px solid #333;
-        }
-        .map-container, .video-container {
-            text-align: center;
-        }
-        .image-map {
-            display: block;
-            text-align: center;
-        }
-	header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-	}
+    header {
+      background-color: #222;
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-	header h1 {
-    font-size: 2.5rem;
-	}
-    </style>
+    header h1 {
+      color: #fff;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00d1b2;
+    }
+
+    section, footer {
+      background-color: #fff;
+      margin: 30px 0;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .map-container, .video-container, .image-map {
+      text-align: center;
+    }
+
+    iframe {
+      display: block;
+      margin: 0 auto 20px;
+      border: 2px solid #333;
+      border-radius: 10px;
+    }
+
+    .image-map {
+      font-size: 1.2rem;
+      line-height: 2;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      background-color: #222;
+      color: #fff;
+      padding: 15px;
+      border-radius: 0;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      iframe {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
 </head>
 <body>
-<header>
-        <nav>
-            <ul> 
-                <li><a href="#Aboutus">About Us</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="index.html#contact" class="contact">Contact Us</a></li>
 
-            </ul>
-        </nav> <br>
-		 
-    </header>
+  <header>
+    <nav>
+      <ul> 
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<section class="video-container">
-        <h2 id="experience">Cebu Eastern College, Inc. Promotional Video</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/f8CuMi0csnE?si=cEQAMIiGE8YXaFQS" title="YouTube video 	player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-	share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
+  <section class="video-container">
+    <h2 id="blog">Cebu Eastern College, Inc. Promotional Video</h2>
+    <h1>"A student’s journey filled with learning, growth, and gratitude. This blog is my way of appreciating every experience, challenge, and opportunity that helps every student become better every day."</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/f8CuMi0csnE?si=cEQAMIiGE8YXaFQS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
 
+  <section class="map-container">
+    <h2>My University Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.5938830049035!2d123.89505129992061!3d10.294269269815926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1742031116679!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
 
-    <section class="map-container">
-        <h2>My University Location</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.5938830049035!2d123.89505129992061!3d10.294269269815926!	2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%	20city!5e0!3m2!1sen!2sph!4v1742031116679!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" 	loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <section class="image-map">
+    <h2>Lists of My Favorite Emojis</h2>
+    😊 Grinning <br>
+    🚀 Rocket <br>
+    🎉 Confetti <br>
+    ❤️ Heart <br>
+    🌎 Globe <br>
+  </section>
 
-    </section>
+  <footer>
+    <p>&copy; 2025 Feona Lovitos | Beveymae Mina | BSIT 1 SEC 4</p>
+  </footer>
+
+</body>
 </html>
